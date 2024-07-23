@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Login e Cadastro de Livros</title>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="login" placeholder="Login" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="button" onclick="login()">Entrar</button>
+        </form>
+       
+        <h2>Cadastro</h2>
+        <form id="cadastroForm">
+            <input type="text" id="novoLogin" placeholder="Novo Login" required>
+            <input type="password" id="novaSenha" placeholder="Nova Senha" required>
+            <input type="password" id="repSenha" placeholder="Repita a Senha" required>
+            <button type="button" onclick="cadastra()">Cadastrar</button>
+        </form>
+       
+        <form id="livroForm" style="display: none;">
+            <input type="text" id="tituloLivro" placeholder="Título">
+            <input type="text" id="autorLivro" placeholder="Autor">
+            <input type="text" id="generoLivro" placeholder="Gênero">
+            <input type="text" id="isbnLivro" placeholder="ISBN">
+            <button type="button" onclick="cadastraLivro()">Cadastrar Livro</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
